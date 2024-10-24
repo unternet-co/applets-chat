@@ -65,7 +65,13 @@ async function streamChatOutput(threadItemId: number) {
 
   const stream = await openai.chat.completions.create({
     model: 'gpt-4o',
-    messages,
+    messages: [
+      {
+        role: 'system',
+        content: 'Please give brief, informative answers. Keep it very short.',
+      },
+      ...messages,
+    ],
     stream: true,
   });
 

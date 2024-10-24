@@ -11,7 +11,7 @@ class TimeDisplay extends HTMLElement {
     this.interval = window.setInterval(() => {
       this.internalTime += 100;
       this.render();
-    }, 100);
+    }, 1000);
   }
 
   attributeChangedCallback(name: string, _: string, newValue: string) {
