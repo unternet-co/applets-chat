@@ -1,0 +1,15 @@
+icon-elem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+icon-elem > svg {
+  stroke-width: 1.7px;
+  color: inherit;
+  width: min-content;
+}
+
+icon-elem > svg.size-1 {
+  height: 18px;
+}

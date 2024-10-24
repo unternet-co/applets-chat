@@ -1,0 +1,20 @@
+{
+  "type": "applet",
+  "name": "Calculator",
+  "description": "Calculate something precisely",
+  "icon": "hash",
+  "frameless": true,
+  "entrypoint": "index.html",
+  "actions": [
+    {
+      "id": "calculate",
+      "description": "Calculate an expression, or short piece of mathematical code",
+      "params": {
+        "expr": {
+          "type": "string",
+          "description": "A valid javascript expression to evaluate, no other text but javascript."
+        }
+      }
+    }
+  ]
+}

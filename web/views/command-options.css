@@ -1,0 +1,46 @@
+command-options {
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-1);
+  background: var(--color-bg);
+  border-radius: var(--rounded-md);
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  max-width: 400px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+command-options li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  border-radius: 4px;
+  color: #333;
+  padding: var(--spacing-1);
+}
+
+command-options li svg {
+  color: #888;
+}
+
+command-options li .title {
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+command-options li .input {
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--text-sm);
+}
+
+command-options li[data-selected='true'] {
+  background: #ededed;
+}

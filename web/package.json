@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/feather-icons": "^4.29.4",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "@unternet/sdk": "file:../../unternet-api/sdk",
+    "@web-applets/sdk": "file:../../web-applets/sdk",
+    "dexie": "^4.0.8",
+    "feather-icons": "^4.29.2",
+    "lit": "^3.2.1",
+    "marked": "^14.1.3",
+    "openai": "^4.67.3",
+    "uhtml": "^4.5.11"
+  }
+}

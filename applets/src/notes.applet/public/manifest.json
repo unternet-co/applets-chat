@@ -1,0 +1,20 @@
+{
+  "type": "applet",
+  "name": "Notes",
+  "description": "A note",
+  "entrypoint": "index.html",
+  "icon": "file",
+  "actions": [
+    {
+      "id": "write",
+      "name": "Create a note",
+      "description": "Write some text to the note, replacing the current text.",
+      "params": {
+        "text": {
+          "type": "string",
+          "description": "Text to write to the note"
+        }
+      }
+    }
+  ]
+}

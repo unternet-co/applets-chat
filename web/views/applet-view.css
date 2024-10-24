@@ -1,0 +1,43 @@
+applet-view {
+  display: flex;
+  flex-direction: column;
+}
+
+applet-view .applet-header {
+  display: flex;
+  font-weight: 500;
+  gap: 3px;
+  margin-bottom: 3px;
+  padding: 0 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+applet-view .applet-header.frameless {
+  padding-bottom: 5px;
+  /* border-bottom: 1px solid #ccc; */
+  /* margin-bottom: 8px; */
+}
+
+applet-view .applet-name {
+  font-weight: 600;
+}
+
+applet-view svg {
+  width: 14px;
+}
+
+applet-view applet-frame:not(.frameless) {
+  border-radius: var(--rounded-md);
+  border: 1px solid #ccc;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+applet-view applet-frame.frameless {
+  padding: 0 10px;
+}
+
+applet-view applet-frame.frameless:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "applets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "applets build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@web-applets/cli": "^0.0.14"
+  }
+}
